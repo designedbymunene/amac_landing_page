@@ -6,7 +6,7 @@ import NavBar from "@/components/navbar";
 const inter = Inter({ subsets: ["latin"] });
 
 export const metadata: Metadata = {
-  title: "AMAC - Africa Mega Agricultural Centre",
+  title: "AMAC - Africa Mega Agricultural Corporation",
   description:
     "An export and import company that specializes in delivering effective, tailored farming solutions to drive agricultural productivity and success.",
 };

@@ -44,7 +44,7 @@ export default function Home() {
         />
         <div className="relative z-10 text-center text-white px-4 max-w-3xl">
           <h1 className="text-3xl md:text-5xl font-bold mb-4">
-            Africa Mega Agricultural Centre (AMAC)
+            Africa Mega Agricultural Corporation (AMAC)
           </h1>
           <p className="text-lg md:text-xl mb-8">
             Delivering effective, tailored farming solutions to drive
@@ -95,7 +95,7 @@ export default function Home() {
         <div className="grid grid-cols-1 md:grid-cols-2 gap-12">
           <div>
             <p className="text-lg mb-4">
-              Africa Mega Agricultural Centre (AMAC) is not just an equipment
+              Africa Mega Agricultural Corporation (AMAC) is not just an equipment
               lender; we are a catalyst for agricultural prosperity in Kenya.
             </p>
             <p className="text-lg mb-4">
