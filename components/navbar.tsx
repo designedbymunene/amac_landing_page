@@ -7,11 +7,10 @@ const NavBar = () => {
   const [menuOpen, setMenuOpen] = useState(false);
 
   return (
-    <header className=" shadow-md">
-      <div className="container mx-auto px-4 py-6 flex justify-between items-center">
-        <Image src={Logo} alt="AMAC Logo" width={100} height={50} />
-        <nav className="hidden md:block">
-          <ul className="flex space-x-6">
+    <header className="shadow-md">
+      <div className="container mx-auto px-4 py-6 flex justify-center items-center">
+        <nav className="hidden md:block md:items-center">
+          <ul className="flex items-center space-x-36">
             <li>
               <a href="#products" className=" hover:text-green-600">
                 Products
@@ -22,7 +21,15 @@ const NavBar = () => {
                 About Us
               </a>
             </li>
+            <li>
+              <Image src={Logo} alt="AMAC Logo" width={150} height={60} />
 
+            </li>
+            <li>
+              <a href="#contacts" className=" hover:text-green-600">
+                Search
+              </a>
+            </li>
             <li>
               <a href="#contacts" className=" hover:text-green-600">
                 Contact us

@@ -2,6 +2,7 @@ import Image from "next/image";
 import Link from "next/link";
 
 // Images
+import Logo from "@/public/images/logo.png";
 import Wheat_Field from "../public/images/Wheat_Field.jpg";
 import maize_flour from "../public/images/amac_maize_flour.png";
 import vegetable_oil from "../public/images/amac_vegetable_oil.png";
@@ -72,14 +73,14 @@ export default function Home() {
             {products.map((product, index) => (
               <div
                 key={index}
-                className="dark:border dark:border-gray-700 p-6 rounded-lg shadow-md"
+                className="dark:border dark:border-gray-700 p-6  rounded-lg shadow-md hover:shadow-lg"
               >
                 <Image
                   src={product.image}
                   alt={product.name}
                   width={200}
                   height={200}
-                  className="mx-auto mb-4 object-cover"
+                  className="mx-auto mb-4 object-cover h-72"
                 />
                 <h3 className="text-xl font-semibold text-green-700 mb-2">
                   {product.name}
@@ -122,78 +123,54 @@ export default function Home() {
           </div>
         </div>
       </section>
-      <section id="contacts" className="container mx-auto px-4 py-16">
-        <h1 className="text-4xl font-bold text-green-800 mb-8">Contact Us</h1>
-        <div className="grid grid-cols-1 md:grid-cols-2 gap-12">
+      <span className="h-0.5 bg-gray-300 w-full my-6" />
+      <section id="contacts" className="container mx-auto px-4 py-16 ">
+        {/* <h1 className="text-4xl font-bold text-green-800 mb-8">Contact Us</h1> */}
+        <div className="grid grid-cols-1 md:grid-cols-3 gap-12 place-items-center mx-44">
           <div>
-            <form className="space-y-4">
-              <div>
-                <label
-                  htmlFor="name"
-                  className="block text-sm font-medium text-gray-700"
-                >
-                  Name
-                </label>
-                <input
-                  type="text"
-                  id="name"
-                  name="name"
-                  className="mt-1 block px-3 py-2 w-full border rounded-md border-gray-300 shadow-sm focus:outline-none focus:ring-2 focus:border-green-500 focus:ring-green-500"
-                />
-              </div>
-              <div>
-                <label
-                  htmlFor="email"
-                  className="block  text-sm font-medium text-gray-700"
-                >
-                  Email
-                </label>
-                <input
-                  type="email"
-                  id="email"
-                  name="email"
-                  className="mt-1 block w-full px-3 py-2 border rounded-md border-gray-300 shadow-sm focus:outline-none focus:ring-2 focus:border-green-500 focus:ring-green-500"
-                />
-              </div>
-              <div>
-                <label
-                  htmlFor="message"
-                  className="block text-sm font-medium text-gray-700"
-                >
-                  Message
-                </label>
-                <textarea
-                  id="message"
-                  name="message"
-                  rows={4}
-                  className="mt-1 block px-3 py-2 border w-full rounded-md border-gray-300 shadow-sm focus:border-green-500 focus:outline-none focus:ring-2 focus:ring-green-500"
-                ></textarea>
-              </div>
-              <button
-                type="submit"
-                className="bg-green-600 text-white px-4 py-2 rounded-md hover:bg-green-700"
-              >
-                Send Message
-              </button>
-            </form>
+          <Image src={Logo} alt="AMAC Logo" width={150} height={60} />
+          <p className="text-base mb-4">
+              Africa Mega Agricultural Corporation (AMAC) is not just an equipment
+              lender; we are a catalyst for agricultural prosperity in Kenya.
+            </p>
+
           </div>
           <div>
             <h2 className="text-2xl font-semibold text-green-700 mb-4">
-              Our Office
+              Quick Links
+            </h2>
+            <ul className="block items-center ">
+            <li className="mb-2">
+              <a href="#products" className=" hover:text-green-600">
+                Products
+              </a>
+            </li>
+            <li className="mb-2">
+              <a href="#about" className=" hover:text-green-600">
+                About Us
+              </a>
+            </li>
+            <li className="mb-2">
+              <a href="#contacts" className=" hover:text-green-600">
+                Search
+              </a>
+            </li>
+            <li className="mb-4">
+              <a href="#contacts" className=" hover:text-green-600">
+                Contact us
+              </a>
+            </li>
+            </ul>
+          </div>
+          <div>
+            <h2 className="text-2xl font-semibold text-green-700 mb-4">
+              Our Location
             </h2>
             <p className="mb-2">Westport Industrial Centre</p>
             <p className="mb-2">Nairobi, Kenya</p>
             <p className="mb-2">Phone: +254 702 907 748</p>
             <p className="mb-4">Email: info@amac.co.ke</p>
-            {/* <div className="relative h-64">
-              <Image
-                src="/office-map.jpg"
-                alt="AMAC office location"
-                layout="fill"
-                objectFit="cover"
-                className="rounded-lg"
-              />
-            </div> */}
+
           </div>
         </div>
       </section>
